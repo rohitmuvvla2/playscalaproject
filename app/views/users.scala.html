@@ -1,0 +1,20 @@
+@(users: List[models.User])
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+<h1>Users</h1>
+<ul>
+    @for(user <- users) {
+    <li>@user.name - @user.email</li>
+    }
+</ul>
+</body>
+</html>
+
